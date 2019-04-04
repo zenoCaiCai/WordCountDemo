@@ -1,3 +1,5 @@
+package sample;
+
 /**
  * wc.exe 文件计数程序
  * 引用的其他类：Filehandler
@@ -13,7 +15,7 @@ import java.util.regex.Pattern;
 
 
 public class wc {
-    //用于记录递归获取的文件路径
+    //用于记录递归获取的文件路
     File or;
     File[] files;
     List<String> filePath = new ArrayList<String>();
@@ -43,7 +45,7 @@ public class wc {
                     }
                 }
                 else if (file.isDirectory()) {
-                iteratorPath(file.getAbsolutePath(),fileClass);
+                    iteratorPath(file.getAbsolutePath(),fileClass);
                 }
             }
         }
@@ -99,7 +101,8 @@ public class wc {
         int isOutput = 0;//标志是否输出到文件
         int isStop = 0;//标志是否有停用词
         //遍历参数数组args[]，用正则表达式匹配出参数，再进一步判断是什么参数，并记录参数后面的路径
-        for(int i = 0;i<args.length;i++){
+//        for(int i = 0;i<args.length;i++){
+        for(int i = 1;i<args.length;i++){
             if(!(Pattern.matches(r, args[i]))){
                 if(args[i-1].equals("-e")){
                     stopListPath = args[i];
@@ -207,5 +210,3 @@ public class wc {
         }
     }
 }
-
-
