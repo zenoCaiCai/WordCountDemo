@@ -1,0 +1,4 @@
+
+hollow word!
+
+separator here <- ? \n ...

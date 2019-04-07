@@ -1,0 +1,9 @@
+hollow world!
+
+stop!
+
+// the comment
+
+/*
+    another comment
+*/
