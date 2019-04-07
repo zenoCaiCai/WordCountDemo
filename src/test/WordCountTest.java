@@ -1,45 +1,15 @@
 package test;
 
-import org.junit.*;
-import wc.*;
+import org.junit.runner.*;
+import org.junit.runners.*;
+import test.wordCountSuite.*;
 
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+        IteratorPathTest.class,
+        OutputTest.class,
+        MainTest.class
+})
 public class WordCountTest
 {
-    @BeforeClass
-    public static void beforeClass() throws Exception
-    {
-    }
-    
-    @Before
-    public void before() throws Exception
-    {
-    }
-    
-    @After
-    public void after() throws Exception
-    {
-    }
-    
-    @Test
-    public void testIteratorPath() throws Exception
-    {
-        WordCount x = new WordCount();
-        x.iteratorPath("./target/", "txt");
-    }
-    
-    
-    @Test
-    public void testOutput() throws Exception
-    {
-    
-    }
-    
-    
-    @Test
-    public void testMain() throws Exception
-    {
-    
-    }
-    
-    
 } 

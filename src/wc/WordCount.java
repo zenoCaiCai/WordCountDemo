@@ -18,7 +18,7 @@ public class WordCount
     //用于记录递归获取的文件路
     File or;
     File[] files;
-    List<String> filePath = new ArrayList<String>();
+    public List<String> filePath = new ArrayList<String>();
     
     //递归获取文件夹内符合要求的文件的路径，dir是文件夹路径，fileClass是文件类别
     public void iteratorPath(String dir, String fileClass)
@@ -231,7 +231,6 @@ public class WordCount
         //输出程序运行时间
         long end = System.currentTimeMillis();
         float costTime = (float)(end - start) / 1000;
-        System.out.println("cost: " + costTime + "s");
         outputBuffer += "cost: " + costTime + "s";
         
         //如果要输出到文件中，将outputBuffer中的内容写入文件
