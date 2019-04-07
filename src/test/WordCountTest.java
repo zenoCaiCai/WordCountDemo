@@ -1,10 +1,14 @@
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
+package test;
+
+import org.junit.*;
 import wc.*;
 
 public class WordCountTest
 {
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+    }
     
     @Before
     public void before() throws Exception
