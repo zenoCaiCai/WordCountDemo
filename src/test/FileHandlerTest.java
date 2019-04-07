@@ -1,6 +1,5 @@
 package test;
 
-import jdk.jshell.*;
 import org.junit.*;
 
 import org.junit.runner.*;
@@ -155,12 +154,12 @@ public class FileHandlerTest
             f.countNoteLine
         );
         
-//        Assert.assertEquals(f.countChar, exChar);
-//        Assert.assertEquals(f.countword, exWord);
-//        Assert.assertEquals(f.countline, exLine);
-//        Assert.assertEquals(f.countCodeLine, exCLine);
-//        Assert.assertEquals(f.countSpaceLine, exSpLine);
-//        Assert.assertEquals(f.countNoteLine, exNLine);
+        Assert.assertEquals(f.countChar, exChar);
+        Assert.assertEquals(f.countword, exWord);
+        Assert.assertEquals(f.countline, exLine);
+        Assert.assertEquals(f.countCodeLine, exCLine);
+        Assert.assertEquals(f.countSpaceLine, exSpLine);
+        Assert.assertEquals(f.countNoteLine, exNLine);
     }
     
     

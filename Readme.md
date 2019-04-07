@@ -1,4 +1,5 @@
 # WordCount Demo
+https://github.com/zenoCaiCai/WordCountDemo
 
 ## 介绍 Description
 1. 本程序是进行“软件质量与测试”课程的测试目标，测试使用文件请放在/targets/目录下。测试用例文档请放到/doc/目录下。
