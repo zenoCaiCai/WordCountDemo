@@ -5,8 +5,8 @@ import wc.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-    FileHandlerTest.class,
-    WordCountTest.class
+    FileHandler.class,
+    WordCount.class,
 })
 public class AllTest
 {
